@@ -1,0 +1,140 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
+:root {
+--text-color: #6f6f6f;
+--primary: rgb(112, 7, 136);
+--primary-trans:rgba(112, 7, 136, 0.8);
+}
+
+html {
+    height: 100%;
+  }
+  body {
+    margin:0;
+    padding:10px;
+    font-family: 'Inter UI', sans-serif;
+    color: var(--text-color);
+    
+  }
+  
+  .Note {
+    background: var(--primary);
+    padding: 40px 60px;
+  }
+
+  .Note h2 {
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    letter-spacing: 4px;
+  }
+
+  .Note p {
+    font-size: 18px;
+    max-width: 700px;
+    line-height: 1.5;
+  }
+
+  .Note h2, .Note p {
+    color: white;
+  }
+
+  .Note a {
+    border: 2px solid white;
+    color: white;
+    background: var(--primary);
+    border-radius: 50px;
+    padding: 20px;
+    text-decoration: none;
+    transition: color, background, 1s;
+    display: inline-block;
+  }
+
+  .Note a:not(:first-child) {
+    margin: 10px 5px;
+  }
+
+  .Note a:hover {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: white;
+  }
+
+  .Exercises {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    gap:20px;
+    max-width: 1280px;
+  }
+  
+  .Exercise {
+    width: 600px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    border: 4px solid var(--primary);
+    box-shadow: -7px 7px 0px var(--primary-trans);
+    border-radius: 10px;
+  }
+  .subhead {
+    margin: 0 0 10px;
+    line-height: 1.2;
+    max-width: 400px;
+  }
+  
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 70px 0;
+    width: 100%;
+  }
+
+  h2 {
+    margin: 0 0 5px;
+    padding: 0;
+  }     
+
+  Exercise p, Exercise li{
+  color: rgb(139, 139, 139);
+  font-size: 14px;
+  line-height: 1.5;
+  }
+
+  .Title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tip {
+    font-size: 30px;
+    margin: 0;
+    position: relative;
+    line-height: 1.1;
+    cursor: pointer;
+  }
+  .tip-tip {
+    background: var(--primary-trans);
+    color: #fff;
+    font-size: 14px;
+    display: none;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    width: 300px;
+    height: 170px;
+    z-index: 1;
+    top: 27px;
+    right: 20px;
+    overflow-wrap: break-word;
+  }
+  .tip:hover .tip-tip {
+    display: block;
+  }
+
+  .Answer p, .Answer span {
+    font-size: 16px;
+    color: var(--primary);
+    margin: 16px 0;
+  }
